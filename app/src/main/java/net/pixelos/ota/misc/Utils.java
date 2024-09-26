@@ -164,9 +164,10 @@ public class Utils {
         return null;
     }
 
-    public static String getServerURL() {
-        return String.format(Constants.OTA_URL, SystemProperties.get(Constants.PROP_BUILD_VERSION), SystemProperties.get(Constants.PROP_DEVICE));
-    }
+public static String getServerURL() {
+    return String.format(Constants.OTA_URL, SystemProperties.get(Constants.PROP_DEVICE));
+}
+
 
     public static String getMaintainerURL(String username) {
         return String.format(Constants.MAINTAINER_URL, username);
